@@ -1,0 +1,124 @@
+.card-body {
+
+    width: 100%;
+    height: 60dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card-logo {
+    width: 28px;
+    height: 28x;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.card-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: baseline;
+    padding: 30px 20px;
+    width: 300px;
+    height: 165px;
+    /* border: 1px solid grey; */
+    background: rgb(63, 217, 246);
+    background: linear-gradient(66deg, rgba(63, 217, 246, 1) 0%, rgba(185, 29, 215, 1) 62%);
+    border-radius: 12px;
+    /* gap: 20px; */
+}
+
+.form-inp>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content:baseline;  */
+    /* padding: 30px 20px; */
+    width: 300px;
+    height: 165px;
+    background: rgb(63, 217, 246);
+    background: linear-gradient(66deg, rgba(63, 217, 246, 1) 0%, rgba(185, 29, 215, 1) 62%);
+    padding: 10px;
+    border-radius: 12px;
+}
+
+label {
+    color: white;
+}
+
+.lebel-inp {
+    color: black;
+    margin-left: -10px;
+}
+
+.label-inp {
+    margin-left: -10px;
+
+}
+
+.card-check {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.inputtt {
+    width: 60px;
+    height: 40px;
+    border-radius: 12px;
+    border: 0.5px solid grey;
+    padding: 5px;
+}
+
+.card-mm {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: -10px; */
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+
+.login-sms-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.card-number {
+    font-size: 18px;
+    text-align: start;
+    width: 300px;
+    padding-left: 30px;
+    margin-top: 30px;
+    color: white;
+}
+
+.expire-data {
+    font-size: 18px;
+    color: white;
+
+}
+
+.card-mmm {
+
+    display: flex;
+    flex-direction: column;
+
+}
