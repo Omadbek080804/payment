@@ -9,8 +9,8 @@ import DonePage from './DonePage';
 
 function PaymeApp() {
 
-    const {totalPrice}=useContext(StateContext)
-const [done,setDone]=useState(false)
+    const { totalPrice } = useContext(StateContext)
+    const [done, setDone] = useState(false)
     const [time, setTime] = useState(getTime());
 
     function getTime() {
@@ -20,7 +20,7 @@ const [done,setDone]=useState(false)
     useEffect(() => {
         const interval = setInterval(() => {
             setTime(getTime());
-        }, 60000); 
+        }, 60000);
 
         return () => clearInterval(interval);
     }, []);
@@ -31,53 +31,49 @@ const [done,setDone]=useState(false)
                 <div className="soat">
                     <h1>{time}</h1>
 
-<div className="camera"></div>
+                    <div className="camera"></div>
 
-<div className='battary'>
-<BiSignal4/>
-<TiWiFi/>
-<IoBatteryFull/>
+                    <div className='battary'>
+                        <BiSignal4 />
+                        <TiWiFi />
+                        <IoBatteryFull />
 
-</div>
+                    </div>
 
                 </div>
 
 
 
-{done ?
+                {done ?
 
-<DonePage/>
-:
+                    <DonePage />
+                    :
+                    <>
+                        <div className="arrow-left">
+                            <GoArrowLeft />
+                            <h1>
 
+                                Pul o`tkazmasi
+                            </h1>
+                        </div>
 
+                        <div className="data-unired">
 
+                            <img src="https://cdn-api.cloudgate.uz/bucket-1/img/fe49b63c8d334afc81f5111b6c6dc174.png" className='unired-img' alt="" />
 
-<>
-                <div className="arrow-left">
-                    <GoArrowLeft/> 
-                    <h1>
-
-                    Pul o`tkazmasi
-                    </h1>
-                </div>
-
-<div className="data-unired">
-
-<img src="https://cdn-api.cloudgate.uz/bucket-1/img/fe49b63c8d334afc81f5111b6c6dc174.png" className='unired-img' alt="" />
-
-<label style={{color:'black'}} htmlFor="">Company Name</label>
-<input type="text" value={'Unired Mobile'} className='unired-inp' />
-<label style={{color:'black'}} htmlFor="">Tolov summasi</label>
-<input type="text" value={totalPrice} className='unired-inp' />
+                            <label style={{ color: 'black' }} htmlFor="">Company Name</label>
+                            <input type="text" value={'Unired Mobile'} className='unired-inp' />
+                            <label style={{ color: 'black' }} htmlFor="">Tolov summasi</label>
+                            <input type="text" value={totalPrice} className='unired-inp' />
 
 
-</div>
+                        </div>
 
 
 
-<button onClick={()=>setDone(true)} className='unired-btn'>Oldinga</button> 
-</>
-}
+                        <button onClick={() => setDone(true)} className='unired-btn'>Oldinga</button>
+                    </>
+                }
 
 
             </div>

@@ -33,7 +33,7 @@
     position: absolute;
     right: -123px;
     bottom: 0px;
-    height: 100px;
+    /* height: 100px; */
     width: 250px;
     border: 0.5px solid black;
     margin-bottom: -17px;

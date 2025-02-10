@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { StateContext } from '../../App'
 import './Payme.css'
 import { NavLink } from 'react-router-dom'
@@ -6,10 +6,11 @@ import { NavLink } from 'react-router-dom'
 function Payme() {
 
   const {alert,setAlert,totalPrice ,codee}=useContext(StateContext)
+  const [inpVal,setInpVal]=useState(null)
 
 const handleSubmit=(e)=>{
   e.preventDefault()
-if(totalPrice>0  || codee  >13){
+if(totalPrice>0  && inpVal.length == 13){
   setAlert(true)
 }
 else{
@@ -31,6 +32,7 @@ else{
             placeholder='+998901234567'
             type="numberic"
             maxLength={13} 
+            onChange={(e)=>setInpVal(e.target.value)}
             required
           />
 
