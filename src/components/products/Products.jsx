@@ -53,9 +53,9 @@ const handleQuantityChange = (id, newQuantity) => {
             </div>
 
 <div className="total">
-<button onClick={()=>handleQuantityChange(item.id, item.soni+1)}>+ </button>
-<h1>{item.soni}</h1>
 <button onClick={()=>handleQuantityChange(item.id, item.soni-1)}>- </button>
+<h1>{item.soni}</h1>
+<button onClick={()=>handleQuantityChange(item.id, item.soni+1)}>+ </button>
 
 </div>
 

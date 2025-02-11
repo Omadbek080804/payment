@@ -77,7 +77,7 @@ function CardSms() {
 
 
 
-            <div className={alertsms ? 'alert' : 'offalert'}>
+            <div className={alertsms ? 'alertsms' : 'offalert'}>
 
                 <button onClick={() => setAlertsms(false)} className='closealert'>X</button>
                 <h1>
